@@ -2,6 +2,8 @@ const cacheName = "optical-shop-asset";
 const staticAssets = [
   "./index.html",
   "./a.ico",
+  "./logo192.png",
+  "./logo512.png"
 ];
 
 // Start the service worker and cache all of the app's content
