@@ -13,10 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Optical Shop</title>
   </head>
-  <body style="background-color: #FFF7ED; font-family: 'Roboto', sans-serif;">
+  <body style="background-color: #FFF7ED;font-family: 'Roboto', sans-serif;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="text/javascript">
         if('serviceWorker' in navigator){
@@ -27,44 +28,29 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE1BB;">
       <div class="container">
         <a class="navbar-brand" href="#">LOGO</a>
-
-          <form class="form-inline" >
-            <input class="form-control" type="search" placeholder="ชื่อหรือเบอร์โทร" aria-label="Search" style="width:70%;max-width: 150px;margin-right: 10px;">
-            <button type="button" class="btn btn-secondary">ค้นหา</button>
-          </form>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">หน้าหลัก
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/customer.html">ลูกค้าที่ซื้อครบ 1 ปี</a>
+              <a class="nav-link" href="../index.html">หน้าหลัก</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/add.html">เพิ่มลูกค้า</a>
-            </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./pages/customer.html">ลูกค้าที่ซื้อครบ 1 ปี
+                    <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./add.html">เพิ่มลูกค้า</a>
+              </li>
           </ul>
 
         </div>
       </div>
     </nav>
 
-    <script>
-      const url = 'https://jsonplaceholder.typicode.com/posts';
-      axios.get(url).then(data => 
-        console.log(data)
-      
-      )
-      .then(err => console.log(err))
-    </script>
-
     <div style="width:90%;margin-left:auto;margin-right:auto;">
+        <p style="font-size: 1rem;"><br>รายชื่อลูกค้าที่ทำการซื้อครบ 1 ปี</p>
       <table class="table table-striped">
       <thead>
         <tr>
@@ -74,20 +60,20 @@
         </tr>
       </thead>
       <tbody>
-        <tr onclick="alert('asdf')">
+        <tr>
           <td>Mark</td>
           <td>Otto</td>
-          <td>0984456451</td>
+          <td>0456452454</td>
         </tr>
         <tr>
           <td>Jacob</td>
           <td>Thornton</td>
-          <td>0456224578</td>
+          <td>0874547845</td>
         </tr>
         <tr>
           <td>Larry</td>
           <td>the Bird</td>
-          <td>0456784514</td>
+          <td>09877454221</td>
         </tr>
       </tbody>
     </table>
