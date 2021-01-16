@@ -3,7 +3,9 @@ const staticAssets = [
   "./index.html",
   "./a.ico",
   "./logo192.png",
-  "./logo512.png"
+  "./logo512.png",
+  "./pages/add.html",
+  "./pages/customer.html"
 ];
 
 // Start the service worker and cache all of the app's content
